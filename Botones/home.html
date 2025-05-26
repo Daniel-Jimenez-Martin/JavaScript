@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+    <style>
+
+        form{
+            margin-top: 1%;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+        button {
+            background-color: aqua;
+        }
+
+        input:focus{
+            outline: none;
+        }
+        .enviar{
+            background-color: pink;
+            margin-top: 1%;
+        }
+
+        .cambiado {
+            background-color: brown;
+        }
+
+        .borde{
+            border: 1px solid pink;
+            transition: 0.3s all;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Boton 1</button>
+    <button>Boton 2</button>
+    <button>Boton 3</button>
+    <button>Boton 4</button>
+
+    <form action="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="nombre" placeholder="Nombre">
+        <label for="telefono">Telefono</label>
+        <input type="telefono" placeholder="Telefono">
+        <label for="email">Email</label>
+        <input type="email" placeholder="email@examle.com">
+    </form>
+    <button class="enviar">Enviar Formulario</button>
+
+    <script>
+        let primeracaptura = document.querySelectorAll('button');
+
+        primeracaptura.forEach(elemento => {
+            elemento.addEventListener("click", () => {
+                elemento.textContent = "Se ha clickeado";
+                elemento.classList.add('cambiado');
+            });
+        });
+
+
+
+        let inputs = document.querySelectorAll('input');
+
+        inputs.forEach( elemento => {
+            elemento.addEventListener("focus", () => {
+                elemento.classList.add("borde");
+            });
+            elemento.addEventListener("blur", () => {
+                elemento.classList.remove("borde")
+            });
+        });
+    </script>
+
+</body>
+
+</html>

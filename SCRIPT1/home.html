@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Script</title>
+    <link rel="stylesheet" href="/stylr.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hola alumnos</h1>
+
+    </header>
+
+    <script>
+        var edad = 25;
+        var edad = 10;
+        
+        let nombre = "Juan";
+        nombre = true;
+
+        const pi = 3.14;
+        //pi = 3.1416 //Error porque es una constante (no se puede redeclarar)
+
+        console.log(nombre);
+        console.log(edad);
+
+        function mostrar() {
+            console.log("Hola desde la funcion");
+        }
+        mostrar();
+
+        function sumar(a,b) {
+            console.log("La suma de " + a + " + " + b + " es: ");
+            console.log( a + b);
+        }
+
+        function restar(a,b) {
+            console.log("La resta de " + a + " - " + b + " es: ");
+            console.log( a - b);
+        }
+
+        function multi(a,b) {
+            console.log("La multiplicacion de " + a + " * " + b + " es: ");
+            console.log( a * b);
+        }
+        function dividir(a,b) {
+            console.log("La division de " + a + " / " + b + " es: ");
+            console.log( a / b);
+        }
+
+        sumar(5,10);
+        restar(10,9);
+        multi(5,5);
+        dividir(5,1);
+
+    </script>
+</body>
+</html>
