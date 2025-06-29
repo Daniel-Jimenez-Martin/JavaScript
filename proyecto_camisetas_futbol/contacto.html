@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/guardar_mensaje.php">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/home.html"> <img src="/img/logoo.png" alt=""> </a>
+        </div>
+        <h2>Las Mejores Camisetas Al Menor Precio</h2>
+
+        <nav>
+            <div class="opciones">
+                <a href="/home.html">
+                    <p>Inicio</p>
+                </a>
+                <div class="submenu">
+                    <p>Categoría</p>
+                    <ul class="submenu-lista">
+                        <li><a href="/categorias/nacionales.html">Nacionales</a></li>
+                        <li><a href="/categorias/retro.html">Retro</a></li>
+                    </ul>
+                </div>
+
+                <a href="/contacto.html">
+                    <p>Contacto</p>
+                </a>
+                <p>Carrito</p>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section class="banner">
+        <div class="banner-titulo">
+            <h1>Contáctanos</h1>
+        </div>
+        <form class="formulario" action="guardar_mensaje.php" method="post">
+
+            <div>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" name="email" placeholder="Ingresa tu correo" required>
+
+
+            <label for="mensaje">Mensaje:</label>
+            <div class="mensaje">
+                <input type="text" name="mensaje" placeholder="Escribe tu mensaje aquí">
+            </div>
+            <div class="boton">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <footer class="ft-contacto">
+        <div class="contenido-footer">
+            <span> Copyright &copy; 2025 Camisetas Fútbol.</span>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html>

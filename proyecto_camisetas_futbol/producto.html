@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Producto</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/home.html"> <img src="/img/logoo.png" alt=""> </a>
+        </div>
+        <div class="buscadore">
+            <input class="buscador" type="text" placeholder="¿Que quieres buscar?">
+            <img class="busca" src="/img/search_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        </div>
+
+        <nav>
+            <div class="opciones">
+                <a href="/home.html">
+                    <p>Inicio</p>
+                </a>
+                <div class="submenu">
+                    <p>Categoría</p>
+                    <ul class="submenu-lista">
+                        <li><a href="/categorias/nacionales.html">Nacionales</a></li>
+                        <li><a href="/categorias/retro.html">Retro</a></li>
+                    </ul>
+                </div>
+
+                <a href="/contacto.html">
+                    <p>Contacto</p>
+                </a>
+                <p>Carrito</p>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section class="global-p">
+        <div class="zoom-container">
+            <img id="zoom-img" src="/img/barsa14-15-producto.png" alt="Camiseta Barcelona">
+        </div>
+        <div class="producto-detalles">
+            <h1>Camiseta Retro Barcelona 14/15 1ª Equipación - Edición Final Champions League</h1>
+            <p class="precio">40 €</p>
+
+            <label  class="label-mayor" for="talla">Talla</label>
+            <select id="talla" name="talla">
+                <option value="">Elige una opción</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+
+            <label class="label-mayor" for="nombreDorsal">Nombre y dorsal</label>
+            <input type="text" id="nombreDorsal" name="nombreDorsal" placeholder="Ej: Messi 10">
+
+            <div class="parches">
+                <p  class="label-mayor">Parches</p>
+                <label>
+                    <input type="radio" name="parche" value="champions">
+                    <label for="parche">Champions League</label>
+
+                    <input type="radio" name="parche" value="champions">
+                    <label for="parche">Liga</label>
+
+                </label>
+            </div>
+
+            <button class="buy-producto">Añadir Al Carrito</button>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <div class="contenido-footer">
+            <span> Copyright &copy; 2025 Camisetas Fútbol.</span>
+        </div>
+
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html>

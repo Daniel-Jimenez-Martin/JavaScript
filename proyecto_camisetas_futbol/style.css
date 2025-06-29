@@ -1,0 +1,597 @@
+:root {
+    --verde: rgb(0, 232, 168);
+    --verde-oscuro: rgb(0, 160, 115);
+    --verde-claro: rgb(178, 255, 235);
+
+    --gris-claro: rgb(231, 231, 231);
+    --gris: rgb(207, 205, 205);
+    --gris-oscuro: rgb(120, 120, 120);
+
+    --negro: rgb(40, 40, 40);
+    --blanco: rgb(255, 255, 255);
+
+    --amarillo-suave: rgb(255, 246, 173);
+    --azul-suave: rgb(204, 241, 255);
+}
+
+
+
+
+
+header {
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+
+.logo img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.opciones {
+    display: flex;
+    gap: 1rem;
+}
+
+header h2 {
+    color: var(--verde);
+    font-size: 40px;
+}
+
+.opciones p {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--verde);
+    font-size: 30px;
+}
+
+.opciones a {
+    text-decoration: none;
+}
+
+
+.submenu {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu-lista {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.submenu-lista li {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.submenu-lista li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.submenu:hover .submenu-lista {
+    display: block;
+}
+
+
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--gris);
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-top: 40px;
+
+}
+
+.formulario label {
+    color: black;
+    font-weight: bold;
+}
+
+.linea-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--gris-claro);
+    margin-bottom: 10px;
+}
+
+.mensaje input {
+    padding-bottom: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: var(--gris-claro);
+}
+
+.boton input {
+    color: black;
+    background-color: var(--verde);
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+.banner-titulo h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+
+.sobreNosotros {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(/img/bombonera-estadio.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.texto-sobre {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texto-sobre h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+
+}
+
+.texto-sobre p {
+    font-size: 24px;
+    margin-top: 2%;
+}
+
+.cat {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.global {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.banner-novedades {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 2%;
+    padding-bottom: 5%;
+}
+
+.cards {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 1%;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+
+.cards h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.buy {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--verde);
+    border-radius: 10px;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.buy:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: var(--verde-oscuro);
+}
+
+footer {
+    background-color: black;
+    color: var(--blanco);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.ft-contacto {
+    margin-top: 5%;
+}
+
+.contenido-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.categoria {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/boca-yo-teamo.png);
+    background-size: cover;
+    background-position: 60% center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.buscadore {
+    display: flex;
+}
+
+.buscador {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.busca {
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.carrito-icono {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.global-p {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.global-p img {
+    width: 100%;
+}
+
+
+.producto-detalles {
+    padding-left: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10%;
+}
+
+.producto-detalles h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 0px;
+}
+
+.precio {
+    font-size: 28px;
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.producto-detalles select,
+.producto-detalles input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--gris-oscuro);
+    background-color: var(--gris-claro);
+    width: 60%;
+}
+
+.parches p {
+    margin-bottom: 10px;
+}
+
+.parches label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-mayor{
+    font-weight: bold;
+    font-size: 24px;
+}
+.buy-producto {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--verde);
+    border-radius: 10px;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+}
+
+.buy.producto:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: var(--verde-oscuro);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+#zoom-img {
+    width: 100%;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+
+.borde {
+    outline: 2px solid var(--verde);
+    transition: outline 0.3s all;
+}
+
+.borde-oscuro {
+    outline: 2px solid var(--verde-oscuro);
+    transition: outline 0.3s all;
+}
+
+#nombreDorsal{
+    width: 56%;
+}
+
+#talla{
+width: 59%;
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+
+@media (max-width: 1024px) {
+    .logo img {
+        width: 200px;
+    }
+
+    .buscadore {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+    .global {
+        width: 90%;
+    }
+
+    .global-p {
+        flex-direction: column;
+    }
+
+    .producto-detalles {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .buy-producto {
+        width: 100%;
+    }
+
+    #nombreDorsal {
+        width: 100%;
+    }
+
+    .formulario {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 2rem;
+    }
+
+    .cards h3 {
+        font-size: 16px;
+    }
+
+    .cards p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .opciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-novedades {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 90%;
+    }
+
+    .sobreNosotros {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .texto-sobre h1 {
+        font-size: 36px;
+    }
+
+    .texto-sobre p {
+        font-size: 18px;
+    }
+
+    .cat {
+        font-size: 36px;
+    }
+
+    .contenido-footer {
+        flex-direction: column;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .zoom-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-sobre h1 {
+        font-size: 28px;
+    }
+
+    .texto-sobre p {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .buscador {
+        height: 40px;
+    }
+
+    .busca {
+        height: 40px;
+        width: 40px;
+    }
+
+    .buy,
+    .buy-producto {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .producto-detalles h1 {
+        font-size: 20px;
+    }
+
+    .precio {
+        font-size: 20px;
+    }
+
+    .label-mayor {
+        font-size: 18px;
+    }
+}
+
+
